@@ -36,7 +36,8 @@ class WelcomeActivity : AppCompatActivity() {
         }
 
         binding.btnConfirmVote.setOnClickListener {
-            // TODO
+            val intent = Intent(this, ConfirmVoteActivity::class.java)
+            startActivity(intent)
         }
 
         binding.btnExit.setOnClickListener {

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFilmVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filme votado: Nenhum"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDirectorVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diretor votado: Nenhum"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu token" />
+
+
+    <Button
+        android:id="@+id/btnSubmitVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Voto"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
