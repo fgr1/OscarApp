@@ -8,7 +8,6 @@ import com.ufpr.oscarapp.databinding.ActivityMainBinding
 import com.ufpr.oscarapp.network.ApiClient
 import com.ufpr.oscarapp.network.ApiService
 import com.ufpr.oscarapp.network.LoginRequest
-import com.ufpr.oscarapp.network.LoginResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        apiService = ApiClient.instance.create(ApiService::class.java)
+        apiService = ApiClient.serverInstance.create(ApiService::class.java)
 
         binding.btnLogin.setOnClickListener {
             val username = binding.etUsername.text.toString().trim()

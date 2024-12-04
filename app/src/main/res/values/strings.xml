@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">OscarApp</string>
-    <string name="oscar_logo">Oscar Trophy</string>
+    <string name="oscar_logo">Oscar Logo</string>
+    <string name="film_poster">Oscar Trophy</string>
+    <string name="vote">Votar</string>
+    <string name="select_director">Selecione um diretor</string>
+    <string name="confirm_vote">Confirmar Voto</string>
 </resources>

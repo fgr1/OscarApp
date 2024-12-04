@@ -21,11 +21,18 @@ class WelcomeActivity : AppCompatActivity() {
         binding.tvToken.text = "Seu token: $userToken"
 
         binding.btnVoteFilm.setOnClickListener {
-            // TODO
+            val intent = Intent(this, FilmListActivity::class.java)
+            val sharedPref = getSharedPreferences("app_prefs", MODE_PRIVATE)
+            val userToken = sharedPref.getInt("user_token", -1)
+
+            intent.putExtra("user_token", userToken)
+            startActivity(intent)
         }
 
         binding.btnVoteDirector.setOnClickListener {
-            // TODO
+            val intent = Intent(this, DirectorVoteActivity::class.java)
+            startActivity(intent)
+
         }
 
         binding.btnConfirmVote.setOnClickListener {
