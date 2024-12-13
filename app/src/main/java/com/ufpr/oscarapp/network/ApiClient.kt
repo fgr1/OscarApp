@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
-    private const val SERVER_BASE_URL = "http://10.0.2.2:3000/"
+    private const val SERVER_BASE_URL = "http://192.168.136.236:3000/"
     private const val EXTERNAL_FILM_URL = "http://wecodecorp.com.br/"
 
     val serverInstance: Retrofit by lazy {
